@@ -12,3 +12,25 @@ import { Button, Alert } from 'hy-store';
 import Button from "hy-store/Button";
 import Alert from "hy-store/Alert";
 ```
+
+### insert method
+```
+export default XPage({
+    show(){
+    },
+    hide(){
+    },
+})
+
+// 插入代码后
+export default XPage({
+    show(){
+    },
+    hide(){
+    },
+    showPop(){
+        this.getComponent('pop').show();
+    }
+})
+
+```
