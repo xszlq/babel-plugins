@@ -5,9 +5,7 @@ function babelPluginImport(options) {
         visitor: {
            ObjectExpression(path){
                  const node = path.node;
-                 node.properties.push(t.expressionStatement(t.stringLiteral(` showPop(){
-                                                                                     this.getComponent('pop').show();
-                                                                                 }`)))
+                 // node.properties.push(t.expressionStatement())
            }
         }
     }
